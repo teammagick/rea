@@ -19,6 +19,10 @@ cmake --build /tmp/cubeworld-omega-build
 ctest --test-dir /tmp/cubeworld-omega-build --output-on-failure
 ```
 
+## Future game destination
+
+The recreated game project belongs in the existing **private** [teammagick/khaosworld](https://github.com/teammagick/khaosworld) repository. Keep REA as the general-purpose reverse-engineering/evidence platform; do not put the playable game inside `teammagick/rea`. Move or reimplement independently authored and validated gameplay prototypes in Khaosworld as appropriate. Do not upload original proprietary executables, game archives, protected assets, or copied game source. The target repository is currently empty; this note is a project handoff, not a claim that the game has been implemented.
+
 ## Integration boundary
 REA is a general-purpose **analysis** platform. Do not merge runtime patch/injection functionality into REA without its maintainer scope review. The prototype is isolated under research/. For a functioning Alpha mod, first investigate exact x86 functions and structures with REA/Ghidra; verify the compatible 2013 Alpha loader SDK, then build a separate local mod with explicit opt-in. Test offline with saved-game backups. No license bypass, game files, or extracted third-party code are distributed.
 
